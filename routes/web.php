@@ -60,9 +60,12 @@ Route::get('/greeting', function () {
 });
 
 Route::get('/greeting', [WelcomeController::class, 'greeting']);
+
 Route::get('/greeting', function () {
-    return view('blog.hello', ['name' => "Maharani"]);
+    return view('blog.hello', ['name' => "Maharani"], ['occupation' => "a programmer"]);
 });
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes

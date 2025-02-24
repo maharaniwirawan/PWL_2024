@@ -1,9 +1,8 @@
 <!-- View pada resources/views/hello.blade.php -->
 <html>
-    <head>
-        <title>greeting</title>
     <body>
         <h1>Hello, {{ $name }}</h1>
+        <h1>You are {{ $occupation }}</h1>
     </body>
 </html>
 
